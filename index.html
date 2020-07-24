@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-helper">
+            <div class="title">
+                <img width="70" height="60" src="./images/awu.png">
+                <h1 class="ml-10">UwU Audio-Player</h1>
+            </div>
+            <div class="image">
+            </div>
+            <div class="names">
+                <p id="title">Artista atual</p>|
+                <p id="music">Música atual</p>
+            </div>
+            <div class="slider_container">
+                
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+              </div>
+            <div class="buttons">
+                <div class="button-helper">
+                <button onclick="playpauseTrack()"><i class="fas fa-play"></i></button>
+                <button onclick="playpauseTrack()"><i class="fas fa-pause"></i></button>
+                <button onclick="nextTrack()"><i class="fas fa-fast-forward"></i></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a61d27d6e8.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
